@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+}
+
+.columns {
+    display: flex;
+}
+
+.columns > div {
+    width: 50%;
+}
