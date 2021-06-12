@@ -21,35 +21,35 @@
           <div class="field">
             <label for="email">E-mail</label>
             <span class="material-icons">mail</span>
-            <input type="email" name="" id="email">
+            <input type="email" name="" placeholder="Enter your email..." id="email" required>
           </div>
           <div class="field">
             <label for="tel">Phone</label>
             <span class="material-icons">phone</span>
-            <input type="tel" name="" id="tel">
+            <input type="tel" name="" placeholder="Enter your phone..." id="tel" required>
           </div>
           <br><span class=""></span>
           <h2>Shipping address</h2>
           <div class="field">
             <label for="name">Full name</label>
             <span class="material-icons">account_circle</span>
-            <input type="text" name="" id="name">
+            <input type="text" name="" id="name" placeholder="Your full name..." value="Rodney Cotton" required>
           </div>
           <div class="field">
             <label for="address">Address</label>
             <span class="material-icons">home</span>
-            <input type="tel" name="" id="address">
+            <input type="tel" name="" placeholder="Your address..." id="address" required>
           </div>
           <div class="field">
             <label for="city">City</label>
             <span class="material-icons">location_city</span>
-            <input type="tel" name="" id="city">
+            <input type="tel" name="" placeholder="Your city..." id="city" required>
           </div>
           <div class="flex">
             <div class="field">
               <label for="country">Country</label>
               <span class="material-icons">public</span>
-              <input type="text" name="" id="country">
+              <input type="text" name="" placeholder="Your country..." id="country" required>
             </div>
             <div class="field">
               <label for="postal">Postal code</label>
@@ -57,23 +57,37 @@
               <input type="number" name="" id="postal">
             </div>
           </div>
-          <input type="checkbox" name="" id="">
-          Save this information for the next time
+          <div>
+            <input type="checkbox" name="" class="checkbox">
+            Save this information for the next time
+          </div>
           <div class="field">
-            <a href="#">Continue</a>
+            <button type="submit">Continue</button>
           </div>
         </form>
       </div>
       <div class="card">
         <div class="products">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <div class="price">
-          <p>Shipping</p><p>$19</p>
-          <p>Total</p><p>$148.198</p>
+          <div><img src="images/photo1.png" alt="photo1"></div>
+          <div>
+            <p>Vintage Backbag</p>
+            <p>$54.99</p>
+            <div class="spinner">0</div>
+          </div>
+          <div><img src="images/photo2.png" alt=""></div>
+          <div>
+            <p>Vintage Backbag</p>
+            <p>$54.99</p>
+            <div class="spinner">0</div>
+          </div>
+          <div class="col1">
+            <p>Shipping</p>
+            <p>Total</p>
+          </div>
+          <div class="col2">
+            <p>$19</p>
+            <p>$148.198</p>
+          </div>
         </div>
       </div>
     </div>
