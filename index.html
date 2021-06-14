@@ -51,34 +51,53 @@
             <div class="field">
               <label for="country">Country</label>
               <span class="material-icons">public</span>
-              <input type="text" name="" placeholder="Your country..." id="country" required>
+              <select required>
+                <option value="0" disabled selected>Your country...</option>
+                <option value="1">México</option>
+                <option value="2">Alemania</option>
+                <option value="3">Brazil</option>
+              </select>
             </div>
             <div class="field">
               <label for="postal">Postal code</label>
               <span class="material-icons">markunread_mailbox</span>
-              <input type="text" name="" id="postal" placeholder="Your postal code...">
+              <input type="text" name="" id="postal" placeholder="Your postal code..." required>
             </div>
           </div>
           <div>
-            <input type="checkbox" name="" class="checkbox">
+            <input type="checkbox" name="" class="checkbox" required>
             <h3>Save this information for the next time</h3>
           </div>
-            <button type="submit">Continue</button>
+          <button type="submit">Continue</button>
         </form>
       </div>
       <div class="card">
         <div class="products">
           <div><img src="images/photo1.png" alt="photo1"></div>
           <div>
-            <p>Vintage Backbag</p>
-            <p>$54.99</p>
-            <div class="spinner">0</div>
+            <p class="p-name">Vintage Backbag</p>
+            <div class="price">
+              <p class="current-price">$54.99</p>
+              <p class="off">$94.99</p>
+            </div>
+            <div class="spinner">
+              <a href="#" onclick="document.getElementById('s1').stepDown()" class="minus">-</a>
+              <input type="number" name="" value="1" id="s1" min="1">
+              <a href="#" onclick="document.getElementById('s1').stepUp()" class="plus">+</a>
+            </div>
           </div>
           <div><img src="images/photo2.png" alt=""></div>
           <div>
-            <p>Vintage Backbag</p>
-            <p>$54.99</p>
-            <div class="spinner">0</div>
+            <p class="p-name">Levi Shoes</p>
+            <div class="price">
+              <p class="current-price">$74.99</p>
+              <p class="off">$124.99</p>
+            </div>
+            <div class="spinner">
+              <a href="#" onclick="document.getElementById('s2').stepDown()" class="minus">-</a>
+              <input type="number" name="" value="1" id="s2" min="1">
+              <a href="#" onclick="document.getElementById('s2').stepUp()" class="plus">+</a>
+            </div>
           </div>
           <div class="col1">
             <hr>
@@ -97,6 +116,9 @@
     </div>
 
   </main>
+  <footer>
+    created by Alejandro G. - devChallenges.io
+  </footer>
 </body>
 
 </html>
